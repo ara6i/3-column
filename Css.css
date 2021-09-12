@@ -14,7 +14,9 @@
     --Transparent-white: hsla(0, 0%, 100%, 0.75);
     --Very-light-gray: hsl(0, 0%, 95%);
 }
-
+.body {
+     background-color: var(--Very-light-gray);
+}
 
 h1 {
     padding-bottom: 20px;
