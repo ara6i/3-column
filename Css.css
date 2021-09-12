@@ -1,0 +1,134 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    
+}
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+h1 {
+    padding-bottom: 20px;
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display',cursive;
+    font-size: 30px;
+}
+
+p{
+    padding-bottom: 60px;
+    color: var(--Transparent-white);
+    font-family: 'Big Shoulders Display';
+    font-size: 15px;
+
+}
+.image {
+    padding-bottom: 20px;
+}
+.button {
+    border: 2px solid var(--Transparent-white);
+    border-radius: 25px;
+    width: 80%;
+    padding: 10px;
+}
+
+.main-content {
+    max-width: max-content;
+    max-height: max-content;
+    display: flex;
+    align-items: center;
+    margin: 10% auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sedans {
+    flex: 1;
+    max-width: 250px;
+    background-color: var(--Bright-orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--Transparent-white-);
+}
+
+.sedans-content {
+    margin: 50px;
+    
+}
+.sedans button {
+    color: var(--Bright-orange);
+}
+
+
+.suvs {
+    flex: 1;
+    max-width: 250px;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.suvs-content {
+    margin: 50px;
+}
+.suvs button {
+    color: var(--Dark-cyan);
+}
+
+.luxury {
+    flex: 1;
+    max-width: 250px;
+    background-color: var(--Very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.luxury-content {
+    margin: 50px;
+}
+.luxury button {
+    color: var(--Very-dark-cyan);
+}
+
+.button:hover {
+    background: none;
+    cursor: pointer;
+    color: var(--Transparent-white);
+}
+
+@media only screen and (max-width:980px) {
+    .main-content {
+        max-width: 375px;
+    }
+    .sedans{
+        border-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+    }
+    .luxury {
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    
+}
